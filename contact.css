@@ -1,0 +1,103 @@
+*
+{
+    margin:5px;
+}
+body
+{
+    background-image: url('farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 238, 208); 
+} 
+.contact-container {
+    align-items: center;
+   
+}
+#contact {
+    padding: 40px; 
+    background-color:rgb(254, 238, 208); 
+    height: 530px;
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    margin-bottom: 80px; 
+    color:black;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.contact-image {
+    width: 300px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: auto; 
+    display: block; 
+}
+
+.contact-details {
+    width:400px;
+    margin-left: 10px; 
+}
+
+.contact-details h2 {
+    text-align:left;
+    margin-top: 25px;
+    color: #555; 
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.contact-image {
+    width: 280px;; 
+    height: 230px;; 
+    border-radius: 290px;
+    margin-top: 20px;
+}
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+    
+}
+
+.home-button {
+    /* margin-top: 20px;
+    display: flex;
+    flex-direction: column; */
+    align-items: center;
+    margin-top:30px;
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:cadetblue;
+    color:black ;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-button a:hover {
+    background-color:rgb(78, 134, 135);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px; 
+    text-align: center; 
+    color: #777; 
+}

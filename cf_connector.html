@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumer-Farmer Connector</title>
+<link rel="stylesheet" href="cf_connector.css"> 
+</head>
+<body>
+<main>
+    <section id="connector">
+        <h3>| Consumer-Farmer Connector</h3>
+        <form id="connector-form" onsubmit="findFarmers(event)">
+            <div class="input-group">
+                <label for="amount">Enter Amount Needed (in quintal):</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="input-group">
+                <label for="crop">Enter Crop Name:</label>
+                <input type="text" id="crop" name="crop" required>
+            </div>
+            <div class="input-group">
+                <label for="budget">Enter Budget (per quintal):</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+            <button type="submit">Find Farmers</button>
+        </form>
+        <div id="farmer-list">
+           
+        </div>
+    </section>
+</main>
+<script src="cf_connector.js"></script> 
+</body>
+</html>

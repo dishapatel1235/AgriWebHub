@@ -1,0 +1,94 @@
+* {
+    margin-top: 18px;
+}
+
+body {
+    background-image: url('farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newuser-container {
+    align-items: center;
+    padding: 35px;
+    padding-top: 5px;
+    background-color: rgb(254, 238, 208);
+    height: 680px;
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.newuser-form {
+    background-color: cadetblue;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newuser-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 0px;
+    margin-left: 1px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: rgb(55, 106, 107);
+}
+
+.home-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.home-button a:hover {
+    background-color: rgb(55, 106, 107);
+}

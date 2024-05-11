@@ -1,0 +1,23 @@
+.image-container {
+
+    background-color: rgb(254, 238, 208);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 200px;
+
+}
+main img
+{
+    
+        width: 1000px;
+        height: 500; 
+        border-radius: 10px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left:30px ;
+        display: block; 
+        background-color: rgb(254, 238, 208);
+        inset-block:initial;
+
+}

@@ -1,0 +1,106 @@
+*
+{
+    margin:5px;
+}
+body
+{
+    background-image: url('farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(254, 238, 208)} */}
+.about-container {
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(254, 238, 208)
+   
+}
+#about {
+    padding: 65px; 
+    background-color:rgb(254, 238, 208)y; 
+    height: 550px;
+    width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    margin-bottom: 80px; 
+    color:black;
+}
+.h2 {
+    text-align: center;
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 5px; 
+    
+}
+
+.p {
+    text-align: center;
+    color: #666; 
+    font-size: 16px; 
+    line-height: 1.6;
+    margin-bottom: 15px; 
+}
+
+.h3 {
+    text-align: center;
+    color: #555; 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.ol {
+    /* text-align: center; */
+    color: #666; 
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+.ol li {
+    margin-bottom: 5px; 
+}
+
+.ol li strong {
+    text-align: center;
+    font-weight: bold; 
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.home-button {
+    /* margin-top: 20px;
+    display: flex;
+    flex-direction: column; */
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 200px;
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:cadetblue;
+    color:black ;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-button a:hover {
+    background-color:rgb(55, 106, 107);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px; 
+    text-align: center; 
+    color: #777; 
+}

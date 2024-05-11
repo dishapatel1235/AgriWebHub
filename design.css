@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url('farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: rgb(254, 238, 208);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+}
+nav
+{
+    /* background-color: rgb(143, 198, 199); */
+    background-color: rgb(254, 238, 208);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul
+{
+    width: 100%;
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li
+{
+    height:100px;
+}
+nav a
+{
+    height: 100px;
+    padding: 0 30px;
+    /* text-decoration: antiquewhite; */
+    text-decoration: rgb(143, 198, 199);
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav h4
+{
+    height: 100px;
+    padding: 0 30px;
+    /* text-decoration: antiquewhite; */
+    text-decoration: rgb(143, 198, 199);
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size:x-large;
+
+}
+nav a:hover
+{
+    /* background-color: antiquewhite; */
+    background-color: rgb(143, 198, 199);
+
+}
+nav li:first-child
+{
+    margin-right: auto;
+}
+main {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    min-height: 100vh;
+    padding-right: 50px;
+    padding-bottom: 200px;;
+}
+
+.image-container {
+
+    background-color: rgb(254, 238, 208);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 150px;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+main img
+{
+    
+    width: 800px;
+    height: 370; 
+    border-radius: 10px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left:30px ;
+    display: block; 
+    background-color: rgb(254, 238, 208);
+    inset-block:initial;
+
+}
+.images-container {
+
+    background-color: rgb(254, 238, 208);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 540px;
+    margin-left: 95px;
+    margin-right: 20px;
+}
+.small
+{
+    
+    width: 340px; 
+    height: 370; 
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left:30px ;
+    display: block; 
+    background-color: rgb(254, 238, 208);
+    inset-block:initial;
+    
+}
+
+
+.dropdown 
+{
+    float: left;
+    overflow: hidden;
+}
+.navbar div:hover, .dropdown:hover
+{
+    /* background-color:cadetblue; */
+    background-color: rgb(254, 238, 208);
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    /* background-color:cadetblue; */
+    background-color: rgb(254, 238, 208);
+    min-width: 125px;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    align-content: center;
+    
+
+}
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    max-height: 50px;
+    border-bottom: 1px solid #ddd; 
+
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover 
+{
+    /* background-color:antiquewhite; */
+    background-color: rgb(143, 198, 199);
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+  
+.sidebar
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgb(254, 238, 208);
+    /* background-color: rgb(143, 198, 199); */
+    backdrop-filter:blur(100px);
+    box-shadow: -10px 0 10px rgba(248, 238, 238, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li
+{
+    width: 100%;
+}
+.sidebar a
+{
+    width: 100%;
+}
+.menuButton
+{
+    display: none;
+}
+@media(max-width:700px)
+{
+    .hideOnMobile
+    {
+        display: none;
+    }
+    .menuButton
+    {
+        display: block;
+    }
+    
+}
+@media(max-width:400px)
+{
+    .sidebar
+    {
+        width:100%;
+    }
+}
+@media(max-width:30px)
+{
+    .login
+    {
+        display: block;
+    }
+}
+
+

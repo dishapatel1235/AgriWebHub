@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <DOCTYPE! html>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comoatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="design.css"/>
+        <link rel="stylesheet" href="msp.css"/>
+        <link rel="stylesheet" href="fc_connector.css">
+        <link rel="stylesheet" href="cf_connector.css">
+    </DOCTYPE>
+    </head>
+    <body>
+        <nav>
+            <header></header>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" 
+                    viewBox="0 -960 960 960" width="24">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 
+                    56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="webhtml.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="dropdown"><a href="#">USER
+                      <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                      <a href="login.html">LOG IN</a>
+                      <a href="edituser.html">EDIT USER</a>
+                      <a href="newuser.html">NEW USER</a>
+                    </div>
+                    </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+            <ul>
+                <li><h4 href="#">| AgriWebHub</a></li>
+                <li class="hideOnMobile"><a href="webhtml.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile dropdown"><a href="#">USER<svg xmlns="http://www.w3.org/2000/svg" 
+                    height="24" viewBox="0 -960 960 960" width="24"><path d="M480-240Zm-320 80v-112q0-34 
+                    17.5-62.5T224-378q62-31 126-46.5T480-440q37 0 73 4.5t72 14.5l-67 68q-20-3-39-5t-39-2q-56 
+                    0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32h240v80H160Zm400 40v-123l221-220q9-9 20-13t22-4q12 
+                    0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-340L683-120H560Zm300-263-37-37 37 
+                    37ZM620-180h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19ZM480-480q-66 
+                    0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 
+                    56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Z"/></svg>
+                    <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                      <a href="login.html">LOG IN</a>
+                      <a href="edituser.html">EDIT USER</a>
+                      <a href="newuser.html">NEW USER</a>
+                    </div> </li>
+                <li class="menuButton"onclick="showSidebar()"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" 
+                    viewBox="0 -960 960 960" width="24">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg></a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+        </nav>
+        <main>
+            <div class="image-container">
+                <img src="Untitled.jpeg"/>
+            </div>
+            <div class="msp-container">
+                <section id="MSP CALCULATOR">
+                    <h3>| MSP CALCULATOR</h3>
+                    <h5>______________________________________</h5>
+                    <form class="msp-form" onsubmit="calculateMSP(event)">
+                        <div class="input-group">
+                            <label for="cost">Cost of Production (per quintal):</label>
+                            <input type="number" id="cost" name="cost" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="profit">Expected Profit Percentage:</label>
+                            <input type="number" id="profit" name="profit" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="msp">Minimum Support Price (MSP):</label>
+                            <input type="text" id="msp" name="msp" readonly>
+                        </div>
+                        <button type="submit">Calculate MSP</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <main>
+            <section id="connector">
+                <h3>| Farmer-Consumer Connector</h3>
+                <h5>______________________________________</h5>
+                <form id="connector-form" onsubmit="findConsumers(event)">
+                    <div class="input-group">
+                        <label for="msp">Enter Minimum Support Price (MSP):</label>
+                        <input type="number" id="msp" name="msp" required="">
+                    </div>
+                    <div class="input-group">
+                        <label for="crop">Enter Crop Name:</label>
+                        <input type="text" id="crop" name="crop" required="">
+                    </div>
+                    <button type="submit">Find Consumers</button>
+                </form>
+                <div id="consumer-list">
+                    <!-- Consumer list will be displayed here -->
+                </div>
+            </section>
+            <section id="connector">
+                <h3>| Consumer-Farmer Connector</h3>
+                <h5>______________________________________</h5>
+                <form id="connector-form" onsubmit="findFarmers(event)">
+                    <div class="input-group">
+                        <label for="amount">Enter Amount Needed (in quintal):</label>
+                        <input type="number" id="amount" name="amount" required="">
+                    </div>
+                    <div class="input-group">
+                        <label for="crop">Enter Crop Name:</label>
+                        <input type="text" id="crop" name="crop" required="">
+                    </div>
+                    <div class="input-group">
+                        <label for="budget">Enter Budget (per quintal):</label>
+                        <input type="number" id="budget" name="budget" required="">
+                    </div>
+                    <button type="submit">Find Farmers</button>
+                </form>
+                <div id="farmer-list">
+                    <!-- Farmer list will be displayed here -->
+                </div>
+            </section>
+        </main>
+        <script >
+            function showSidebar()
+            {
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hideSidebar()
+            {
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+
+        </script>
+        <script src="msp.js"></script>
+        <script src="fc_connector.js"></script> 
+        <script src="cf_connector.js"></script>
+    </body>
+</html>

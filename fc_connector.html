@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer-Consumer Connector</title>
+<link rel="stylesheet" href="fc_connector.css"> 
+</head>
+<body>
+<main>
+    <section id="connector">
+        <h3>| Farmer-Consumer Connector</h3>
+        <form id="connector-form" onsubmit="findConsumers(event)">
+            <div class="input-group">
+                <label for="msp">Enter Minimum Support Price (MSP):</label>
+                <input type="number" id="msp" name="msp" required>
+            </div>
+            <div class="input-group">
+                <label for="crop">Enter Crop Name:</label>
+                <input type="text" id="crop" name="crop" required>
+            </div>
+            <button type="submit">Find Consumers</button>
+        </form>
+        <div id="consumer-list">
+            <!-- Consumer list will be displayed here -->
+        </div>
+    </section>
+</main>
+<script src="fc_connector.js"></script> 
+</body>
+</html>

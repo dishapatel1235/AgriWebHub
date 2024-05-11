@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:gray;
+    
+}
+
+
+/* Main styles */
+main {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    min-height: 100vh;
+    padding-right: 50px;
+    padding-bottom: 2px;
+}
+main h3
+{
+    text-align: left;
+}
+
+
+.msp-container {
+    padding: 30px;
+    background-color:rgb(254, 238, 208);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 410px;
+    width: 400px;
+    margin-right: 30px;
+    margin-bottom: 150px;
+}
+
+/* Form styles */
+.msp-form {
+    margin-top: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="number"],
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(114, 187, 190);
+    border: none;
+    color:black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(55, 106, 107);
+}
+
+/* Home button styles */
+.home-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+} */
+
+/* .home-button a:hover {
+    background-color: #0b7dda;
+} */

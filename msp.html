@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page with MSP Calculator</title>
+<link rel="stylesheet" href="msp.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <div class="msp-container">
+        <section id="MSP CALCULATOR">
+            <h3>| MSP CALCULATOR</h3>
+            <h5>______________________________________</h5>
+            <form class="msp-form" onsubmit="calculateMSP(event)">
+                <div class="input-group">
+                    <label for="cost">Cost of Production (per quintal):</label>
+                    <input type="number" id="cost" name="cost" required>
+                </div>
+                <div class="input-group">
+                    <label for="profit">Expected Profit Percentage:</label>
+                    <input type="number" id="profit" name="profit" required>
+                </div>
+                <div class="input-group">
+                    <label for="msp">Minimum Support Price (MSP):</label>
+                    <input type="text" id="msp" name="msp" readonly>
+                </div>
+                <button type="submit">Calculate MSP</button>
+            </form>
+        </section>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="msp.js"></script> 
+</body>
+</html>
